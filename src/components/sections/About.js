@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Section, Container } from '@components/global';
-
+import ExternalLink from '@common/ExternalLink';
 import { ReactComponent as ManChecking } from '@images/art/checking.svg';
 
 class About extends React.Component {
@@ -17,9 +17,7 @@ class About extends React.Component {
               <b>degree.ly</b> is a platform designed for NUS students planning their
               semesters and cumulatively tracking their degree progress.
               <br />
-              It builds upon the success of the <a href="https://nusmods.com/" target="_blank">NUSMods</a> platform and brings
-              together a more integrated and convenient experience for students
-              to keep track of and plan their degree progression.
+              It builds upon the success of the <StyledExternalLink href="https://nusmods.com/">NUSMods</StyledExternalLink> platform and brings together a more integrated and convenient experience for students to keep track of and plan their degree progression.
               <br />
             </p>
           </div>
@@ -40,13 +38,6 @@ const Grid = styled.div`
   justify-items: center;
   margin: 24px 0;
 
-  ${props =>
-    props.inverse &&
-    `
-    text-align: left;
-    grid-template-columns: 2fr 3fr;
-  `}
-
   h2 {
     margin-bottom: 16px;
   }
@@ -59,14 +50,7 @@ const Grid = styled.div`
     &:last-child {
       margin-bottom: 24px;
     }
-
-    ${props =>
-      props.inverse &&
-      `
-        ${Art} {
-          order: 2;
-        }
-    `}
+    
   }
 `;
 
@@ -74,6 +58,15 @@ const Art = styled.figure`
   margin: 0;
   max-width: 380px;
   width: 100%;
+`;
+
+const StyledExternalLink = styled(ExternalLink)`
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: ${props => props.theme.color.black.regular};
+  }
 `;
 
 export default About;

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
@@ -100,11 +99,13 @@ const Text = styled.div`
 `;
 
 const StyledExternalLink = styled(ExternalLink)`
-  color: inherit;
+  color: ${props => props.theme.color.white.dark};
+  opacity: 0.7;
   text-decoration: none;
 
   &:hover {
-    color: ${props => props.theme.color.black.regular};
+    color: ${props => props.theme.color.white.regular};
+    opacity: 1;
   }
 `;
 
