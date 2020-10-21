@@ -31,11 +31,13 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Supercharge
-                <br />
-                your degree planning
-                <br />
-                with us today
+                <Headline>
+                  Supercharge
+                  <br />
+                  your degree planning
+                  <br />
+                  with us today
+                </Headline>
               </h1>
               <br />
               <p>
@@ -72,6 +74,11 @@ const Art = styled.figure`
       width: 100%;
     }
   }
+`;
+
+const Headline = styled.div`
+  color: ${props => props.theme.color.white.regular};
+  font-weight: 700;
 `;
 
 const Grid = styled.div`

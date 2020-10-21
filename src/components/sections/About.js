@@ -39,6 +39,7 @@ const Grid = styled.div`
   margin: 24px 0;
 
   h2 {
+    font-weight: 700;
     margin-bottom: 16px;
   }
 

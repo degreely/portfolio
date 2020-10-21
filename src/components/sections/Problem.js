@@ -112,6 +112,7 @@ const Grid = styled.div`
 
   h2 {
     margin-bottom: 16px;
+    font-weight: 700;
   }
 
   @media (max-width: ${props => props.theme.screen.md}) {
