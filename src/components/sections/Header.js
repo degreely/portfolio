@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
+import { ReactComponent as Celebration } from '@images/art/graduation.svg';
 
 const Header = () => (
   <StaticQuery
@@ -27,20 +28,20 @@ const Header = () => (
         <Container>
           <Grid>
             <Art>
-              <Img fluid={data.art_build.childImageSharp.fluid} />
+              {Celebration()}
             </Art>
             <Text>
               <h1>
-                Fast in
+                Supercharge
                 <br />
-                every way
+                your degree planning
                 <br />
-                that matters
+                with us today
               </h1>
               <br />
               <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
+                <StyledExternalLink href="https://degreely.github.io/degreely/">
+                  Check out degree.ly &nbsp;&#x2794;
                 </StyledExternalLink>
               </p>
             </Text>

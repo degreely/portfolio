@@ -7,22 +7,12 @@ import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 import GithubIcon from '@static/icons/github.svg';
-import InstagramIcon from '@static/icons/instagram.svg';
-import TwitterIcon from '@static/icons/twitter.svg';
 
 const SOCIAL = [
   {
     icon: GithubIcon,
-    link: 'https://github.com/ajayns/gatsby-absurd',
-  },
-  {
-    icon: InstagramIcon,
-    link: 'https://instagram.com/ajay_ns',
-  },
-  {
-    icon: TwitterIcon,
-    link: 'https://twitter.com/ajayns08',
-  },
+    link: 'https://github.com/degreely',
+  }
 ];
 
 const Footer = () => (
@@ -52,7 +42,7 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>Absurd</h2>
+              <h2>degree.ly</h2>
               <span>
                 Illustrations by
                 {` `}
