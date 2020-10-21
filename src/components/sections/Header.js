@@ -1,34 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 import { ReactComponent as Celebration } from '@images/art/graduation.svg';
 
-const Header = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        art_build: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 1400) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
+class Header extends React.Component {
+  render() {
+    return (
       <HeaderWrapper>
         <Container>
           <Grid>
-            <Art>
-              {Celebration()}
-            </Art>
+            <Art>{Celebration()}</Art>
             <Text>
               <h1>
                 <Headline>
@@ -49,9 +32,9 @@ const Header = () => (
           </Grid>
         </Container>
       </HeaderWrapper>
-    )}
-  />
-);
+    );
+  }
+}
 
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.primary};

@@ -17,6 +17,7 @@ class About extends React.Component {
               <b>degree.ly</b> is a platform designed for NUS students planning their
               semesters and cumulatively tracking their degree progress.
               <br />
+              <br />
               It builds upon the success of the <StyledExternalLink href="https://nusmods.com/">NUSMods</StyledExternalLink> platform and brings together a more integrated and convenient experience for students to keep track of and plan their degree progression.
               <br />
             </p>
