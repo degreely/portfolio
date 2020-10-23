@@ -40,7 +40,7 @@ const LOGOS = [
   },
 ];
 
-const UsedBy = () => (
+const Research = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -57,7 +57,7 @@ const UsedBy = () => (
       }
     `}
     render={data => (
-      <Section id="brands" accent>
+      <Section id="research" accent>
         <StyledContainer>
           <div>
             <h1>Used by biggest in tech</h1>
@@ -123,4 +123,4 @@ const Art = styled.figure`
   }
 `;
 
-export default UsedBy;
+export default Research;
