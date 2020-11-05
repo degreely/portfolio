@@ -48,12 +48,9 @@ const Problem = () => (
         <Container>
             <Grid>
               <div>
-                <h2>Speed past the competition</h2>
+                <h2>Initial Problem Statement</h2>
                 <p>
-                  Gatsby.js builds the fastest possible website. Instead of
-                  waiting to generate pages when requested, pre-build pages and
-                  lift them into a global cloud of servers — ready to be
-                  delivered instantly to your users wherever they are.
+                  The project came about in recognition of the lack of a single, well-designed platform for existing students to consolidate their degree progress. We noticed that current students employ a myriad of self-made and sourced solutions to arrange their study plans, all while hoping they do not make the mistake of missing graduation requirements.
                 </p>
               </div>
               <Art>
@@ -65,23 +62,21 @@ const Problem = () => (
                 <Img fluid={data.art_learn.childImageSharp.fluid} />
               </Art>
               <div>
-                <h2>Nothing new to learn here</h2>
+                <h2>Alternatives in Place</h2>
                 <p>
-                  Enjoy the power of the latest web technologies – React.js ,
-                  Webpack , modern JavaScript and CSS and more — all set up and
-                  waiting for you to start building.
+                   From the use of spreadsheets to NUSMods, the slow and arduous process is made worse by resources and materials being strewn across the school’s various platforms, requiring multi-tasking skills and a high cognitive load to consolidate and analyze.
                 </p>
               </div>
             </Grid>
             <Grid>
               <div>
-                <h2>Grow and build your ideas</h2>
+                <h2>EduRec's what-if</h2>
                 <p>
-                  Waste no more time on tooling and performance. Focus on the
-                  the site you want to build and nothing more.
-                  <br />
-                  <br />
-                  Gatsby is fast in every way that matters.
+                   One of the most useful sites NUS has to offer for planning modules, EduRec’s what-if report generator, is slow and frustrating to navigate. Furthermore, it is not widely known and only available for limited periods in an academic year.
+                   <br />
+                </p>
+                <p>
+                  With degree.ly, we hope to make module planning and progress tracking a less nightmarish and more efficient process.
                 </p>
               </div>
               <Art>
@@ -98,7 +93,7 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-gap: 40px;
-  text-align: right;
+  text-align: left;
   align-items: center;
   justify-items: center;
   margin: 24px 0;
