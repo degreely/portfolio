@@ -41,20 +41,13 @@ export const NavListWrapper = styled.div`
 
 export const NavItem = styled.li`
   margin: 0 0.75em;
-  font-family: ${props => props.theme.font.secondary};
-  font-weight: 400;
+  font-family: ${props => props.theme.font.primary};
+  font-weight: 500;
   ${props => props.theme.font_size.small};
 
   a {
     text-decoration: none;
-    opacity: 0.7;
-    color: ${props => props.theme.color.white.regular};
-  }
-
-  &.active {
-    a {
-      opacity: 1;
-    }
+    color: ${props => props.theme.color.white.dark};
   }
 `;
 

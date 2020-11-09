@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Scrollspy from 'react-scrollspy';
+import { Link } from 'gatsby';
 
 import { Container } from '@components/global';
 import {
@@ -15,7 +14,11 @@ import {
 
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
-const NAV_ITEMS = ['About', 'Problem', 'Research', 'Evaluation', 'Prototyping'];
+const NAV_ITEMS = ['Problem', 'User Research', 'Design Evaluation', 'Prototyping Process'];
+
+const activeStyle = {
+  textDecoration: 'underline',
+}
 
 class Navbar extends Component {
   state = {
@@ -32,14 +35,23 @@ class Navbar extends Component {
     }
   };
 
-  getNavAnchorLink = item => (
-    <AnchorLink href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
-      {item}
-    </AnchorLink>
-  );
+  getNavAnchorLink = item => {
+    const item_link = item.toLowerCase().replace(/\s/g, '-');
+    return (
+      <Link to={`/${item_link}`} onClick={this.closeMobileMenu} activeStyle={activeStyle}>
+        {item}
+      </Link>
+    );
+  };
 
   getNavList = ({ mobile = false }) => (
     <NavListWrapper mobile={mobile}>
+      <ul>
+        {NAV_ITEMS.map(navItem => (
+          <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
+        ))}
+      </ul>
+      {/*
       <Scrollspy
         items={NAV_ITEMS.map(item => item.toLowerCase())}
         currentClassName="active"
@@ -50,6 +62,7 @@ class Navbar extends Component {
           <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
         ))}
       </Scrollspy>
+      */}
     </NavListWrapper>
   );
 
@@ -59,7 +72,9 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <Brand>degree.ly</Brand>
+          <Link to="/">
+            <Brand>degree.ly</Brand>
+          </Link>
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
               <MenuIcon />

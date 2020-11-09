@@ -58,7 +58,7 @@ const Grid = styled.div`
 
 const Art = styled.figure`
   margin: 0;
-  max-width: 380px;
+  max-width: 50rem;
   width: 100%;
 `;
 

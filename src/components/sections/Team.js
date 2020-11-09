@@ -2,39 +2,30 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import { ReactComponent as TeamArt } from '@images/team/team.svg';
 
 import { Section, Container } from '@components/global';
 
 const TEAM = [
   {
-    name: 'Josh Peck',
+    name: 'Dominique Ng',
     image: 'josh.jpg',
-    role: 'Founder',
+    role: 'Year 3, CS',
   },
   {
-    name: 'Lisa Haydon',
+    name: 'Kenneth Fung',
     image: 'lisa.jpg',
-    role: 'Art Director',
+    role: 'Year 3, CS',
   },
   {
-    name: 'Ashlyn Harris',
+    name: 'Geraldine Foe',
     image: 'ashlyn.jpg',
-    role: 'Frontend Engineer',
+    role: 'Year 4, CNM',
   },
   {
-    name: 'Todd Joseph',
+    name: 'Ong Ai Hui',
     image: 'todd.jpg',
-    role: 'Designer',
-  },
-  {
-    name: 'Martin White',
-    image: 'martin.jpg',
-    role: 'Backend Engineer',
-  },
-  {
-    name: 'Rose Leslie',
-    image: 'rose.jpg',
-    role: 'Marketing',
+    role: 'Year 4, CS',
   },
 ];
 
@@ -54,43 +45,32 @@ const Team = () => (
             }
           }
         }
-        art_team: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "team_work" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 1600) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
       }
     `}
     render={data => (
       <Section id="team" accent="secondary">
+        
         <Container style={{ position: 'relative' }}>
-          <h1>The Team</h1>
-          <TeamGrid>
-            {TEAM.map(({ name, image, role }) => {
-              const img = data.allFile.edges.find(
-                ({ node }) => node.relativePath === image
-              ).node;
+          <h2 style={{ fontWeight: 'bolder' }}>The Team</h2>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <TeamGrid>
+              {TEAM.map(({ name, image, role }) => {
+                const img = data.allFile.edges.find(
+                  ({ node }) => node.relativePath === image
+                ).node;
 
-              return (
-                <div key={name}>
-                  <Img fluid={img.childImageSharp.fluid} alt={name} />
-                  <Title>{name}</Title>
-                  <Subtitle>{role}</Subtitle>
-                </div>
-              );
-            })}
-          </TeamGrid>
-          <Art>
-            <Img fluid={data.art_team.childImageSharp.fluid} />
-          </Art>
-          <ArtMobile>
-            <Img fluid={data.art_team.childImageSharp.fluid} />
-          </ArtMobile>
+                return (
+                  <div key={name}>
+                    <Img fluid={img.childImageSharp.fluid} alt={name} />
+                    <Title>{name}</Title>
+                    <Subtitle>{role}</Subtitle>
+                  </div>
+                );
+              })}
+            </TeamGrid>
+            <Art>{TeamArt()}</Art>
+            <ArtMobile>{TeamArt()}</ArtMobile>
+          </div>
         </Container>
       </Section>
     )}
@@ -121,10 +101,9 @@ const TeamGrid = styled.div`
 `;
 
 const Art = styled.figure`
-  width: 800px;
-  margin: -80px 0;
+  width: 50rem;
+  margin: 0;
   position: absolute;
-  top: 0;
   left: 70%;
 
   @media (max-width: ${props => props.theme.screen.lg}) {
