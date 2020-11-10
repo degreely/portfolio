@@ -2,6 +2,7 @@ import React from 'react';
 import { Section, Container } from '@components/global';
 
 import '../../styles/style.css';
+import { Text } from '@react-md/typography';
 
 class EvaluationPlan extends React.Component {
   render() {

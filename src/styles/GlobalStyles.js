@@ -26,11 +26,16 @@ const GlobalStyles = createGlobalStyle`
 
   h2 {
     font-weight: 700;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     ${props => props.theme.font_size.larger};
   }
 
   h3 {
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: ${props => props.theme.font.primary};
     ${props => props.theme.font_size.large};
   }
 
@@ -38,7 +43,11 @@ const GlobalStyles = createGlobalStyle`
     ${props => props.theme.font_size.small};
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    color: ${props => props.theme.color.black.light};
+    color: ${props => props.theme.color.black.dark};
+  }
+
+  td li {
+    ${props => props.theme.font_size.smaller};
   }
 
   @media (max-width: ${props => props.theme.screen.sm}) {
