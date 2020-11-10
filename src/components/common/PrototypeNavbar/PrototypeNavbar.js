@@ -15,11 +15,10 @@ import {
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
 const NAV_ITEMS = [
-  'User Identification and Recruitment',
-  'First Stage: Exploratory',
-  'Second Stage: Survey',
-  'Personas',
-  'Scenarios',
+  'Ideation and Prototyping Process',
+  'First Iteration',
+  'Second Iteration',
+  'Final Iteration',
 ];
 
 function reformatLink(item) {
@@ -28,7 +27,7 @@ function reformatLink(item) {
     return item_link;
 }
 
-class UserResearchNavbar extends Component {
+class PrototypeNavbar extends Component {
   state = {
     mobileMenuOpen: false,
   };
@@ -89,4 +88,4 @@ class UserResearchNavbar extends Component {
   }
 }
 
-export default UserResearchNavbar;
+export default PrototypeNavbar;

@@ -26,6 +26,7 @@ const GlobalStyles = createGlobalStyle`
 
   h2 {
     font-weight: 700;
+    margin-bottom: 2rem;
     ${props => props.theme.font_size.larger};
   }
 
@@ -35,6 +36,8 @@ const GlobalStyles = createGlobalStyle`
 
   p {
     ${props => props.theme.font_size.regular};
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     color: ${props => props.theme.color.black.light};
   }
 
