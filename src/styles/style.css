@@ -11,3 +11,12 @@
 .clickable:hover {
   cursor: pointer;
 }
+
+tr[class$='--hoverable'] {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+
+tr[class$='--hoverable']:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
