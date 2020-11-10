@@ -1,6 +1,9 @@
 import React from 'react';
+import ExternalLink from '@common/ExternalLink';
 
 import { Section, Container } from '@components/global';
+
+import '../../styles/style.css';
 
 class FirstIteration extends React.Component {
   render() {
@@ -17,6 +20,9 @@ class FirstIteration extends React.Component {
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F8143UnTnVi33YE61RGqdxk%2Fdegree.ly-v1%3Fnode-id%3D0%253A1"
               allowfullscreen
             ></iframe>
+            <p>
+              You may view our interactive prototype <ExternalLink className="link" href="https://www.figma.com/proto/8143UnTnVi33YE61RGqdxk/degree.ly-v1?node-id=139%3A0&viewport=-749%2C-129%2C0.15888762474060059&scaling=contain">here</ExternalLink>.
+            </p>
             <p>
               This version of the prototype was prepared for the pilot user
               evaluation test (the Peer Evaluation) which was done with members

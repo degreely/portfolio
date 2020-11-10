@@ -24,10 +24,28 @@ class FinalIteration extends React.Component {
               allowfullscreen
             ></iframe>
             <p>
+              You may view our interactive prototype{' '}
+              <ExternalLink
+                className="link"
+                href="https://www.figma.com/proto/LpmdjwWh1Tg28nlwjFOJJU/degree.ly-v3?node-id=139%3A0&viewport=149%2C319%2C0.0655687004327774&scaling=contain"
+              >
+                here
+              </ExternalLink>
+              .
+            </p>
+            <p>
+              Throughout these iteration processes, bringing in users’ opinions and
+              having them take part in the design conversation earlier before
+              the final design has been extremely valuable and informative for
+              our team. This is especially because they helped us identify problems we overlooked. Having gone through three iterations of our
+              prototype, we hope that we have designed a user interface that
+              better reflects the end-users’ needs and expectations towards our
+              platform.
+            </p>
+            <p>
               Our team also made great efforts to translate the prototype design
               into a more functional frontend implementation of our proposed
-              interactive designs available{' '}
-              <ExternalLink
+              interactive designs available <ExternalLink
                 className="link"
                 href="https://degreely.github.io/degreely/"
               >

@@ -60,8 +60,7 @@ class FirstStageExploratory extends React.Component {
               </p>
               <p>
                 You can access the various questions and tasks we have asked
-                users{' '}
-                <ExternalLink
+                users <ExternalLink
                   className="link"
                   href="https://tinyurl.com/t8-user-study-template/"
                 >
