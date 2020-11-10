@@ -21,8 +21,8 @@ const NAV_ITEMS = [
   'Prototyping Process',
 ];
 
-const isActive = ({ isCurrent }) => {
-  return isCurrent ? { className: 'active' } : {};
+const isActive = ({ isPartiallyCurrent }) => {
+  return isPartiallyCurrent ? { className: 'active' } : {};
 };
 
 class Navbar extends Component {
