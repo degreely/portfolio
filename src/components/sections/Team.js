@@ -73,6 +73,8 @@ const TeamGrid = styled.div`
 
 const Title = styled.p`
   margin-top: 16px;
+  font-family: ${props => props.theme.font.primary};
+  font-weight: 600;
   color: ${props => props.theme.color.black.regular};
 `;
 

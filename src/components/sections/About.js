@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Section, Container } from '@components/global';
-import ExternalLink from '@common/ExternalLink';
 import { ReactComponent as ManChecking } from '@images/art/checking.svg';
 
 class About extends React.Component {
@@ -18,7 +17,7 @@ class About extends React.Component {
               semesters and cumulatively tracking their degree progress.
               <br />
               <br />
-              It builds upon the success of the <StyledExternalLink href="https://nusmods.com/">NUSMods</StyledExternalLink> platform and brings together a more integrated and convenient experience for students to keep track of and plan their degree progression.
+              It builds upon the success of the NUSMods platform and brings together a more integrated and convenient experience for students to keep track of and plan their degree progression.
               <br />
             </p>
           </div>
@@ -60,15 +59,6 @@ const Art = styled.figure`
   margin: 0;
   max-width: 50rem;
   width: 100%;
-`;
-
-const StyledExternalLink = styled(ExternalLink)`
-  color: inherit;
-  text-decoration: none;
-
-  &:hover {
-    color: ${props => props.theme.color.black.regular};
-  }
 `;
 
 export default About;

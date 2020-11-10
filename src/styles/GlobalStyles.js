@@ -58,6 +58,10 @@ const GlobalStyles = createGlobalStyle`
     ${props => props.theme.font_size.smaller};
   }
 
+  footer h2 {
+    margin-top: 0;
+  }
+
   @media (max-width: ${props => props.theme.screen.sm}) {
     h1 {
       ${props => props.theme.font_size.larger};

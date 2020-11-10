@@ -91,12 +91,12 @@ class KeyChanges extends React.Component {
                     “Edit” buttons on the Dashboard (v1, v2) and on the Degree
                     Settings Page (v1, v2) were initially visually identical
                     buttons placed in identical placement on the page for
-                    consistency. These buttons, however, are functionally
-                    different - on the Dashboard, the “Edit” button enables the
-                    edit mode for users to add or remove modules from the
-                    semesters; whereas on the Degree Settings Page, the “Edit”
-                    button allows users to add to or remove from their
-                    specialisations, majors and minors.
+                    consistency. These buttons, however, are{' '}
+                    <b>functionally different</b> - on the Dashboard, the “Edit”
+                    button enables the edit mode for users to add or remove
+                    modules from the semesters; whereas on the Degree Settings
+                    Page, the “Edit” button allows users to add to or remove
+                    from their specialisations, majors and minors.
                   </p>
                   <p>
                     Through the second user evaluation, participants confused
@@ -107,8 +107,8 @@ class KeyChanges extends React.Component {
                   <img src={redTwo} width="500rem" />
 
                   <p>
-                    By changing the labels, appearances, and positions of the
-                    “Edit” buttons, as well as adding a page title to the Degree
+                    By changing the <b>labels</b>, <b>appearances</b>, and <b>positions</b> of the
+                    “Edit” buttons, as well as adding a <b>page title</b> to the Degree
                     Settings Page, helped to better distinguish the pages and
                     the functions of the buttons. The icon used for the
                     “Dashboard” button on the Degree Settings page was also
@@ -120,8 +120,9 @@ class KeyChanges extends React.Component {
 
                   <p>
                     Through our internal evaluation, the Degree Settings Page
-                    was further modified to reduce clutter on the top section of
-                    the page, as well as to take into account its “Edit” mode.
+                    was further modified to <b>reduce clutter</b> on the top
+                    section of the page, as well as to take into account its
+                    “Edit” mode.
                   </p>
                   <img src={redFive} width="500rem" />
                   <img src={redSix} width="500rem" />
@@ -133,16 +134,19 @@ class KeyChanges extends React.Component {
                     plan to reflect by adding to or removing from their majors,
                     minors and focus areas, participants from both rounds of
                     usability tests mistakenly clicked into the plan selection
-                    dropdown. The intended behaviour was for participants to
+                    dropdown.
+                  </p>
+                  <p>
+                    The intended behaviour was for participants to
                     access the Degree Settings page through the profile dropdown
                     on the right side of the navigation bar, shown below.
-                    Participants made it known that our interface lacked
-                    visibility and affordance for users to enter the correct
+                    Participants made it known that our interface <b>lacked
+                    visibility and affordance</b> for users to enter the correct
                     page for such settings quickly.
                   </p>
                   <p>
-                    Hence, to increase the accessibility of the Degree Settings
-                    page and to increase ease of navigation, the link to the
+                    Hence, to <b>increase the accessibilit</b>y of the Degree Settings
+                    page and to <b>increase ease of navigation</b>, the link to the
                     page was moved out of the dropdown and into the navigation
                     bar as a linked cogwheel icon.
                   </p>
@@ -151,7 +155,7 @@ class KeyChanges extends React.Component {
                   <p>
                     Following the changes to the navigation bar, the profile
                     dropdown was also reimagined to closely resemble Google’s
-                    profile dropdown, which most users should be familiar with.
+                    profile dropdown, which most users should be <b>familiar</b> with.
                   </p>
                   <img src={navThree} width="200rem" />
                 </TabPanel>
@@ -170,7 +174,7 @@ class KeyChanges extends React.Component {
                   <img src={modOne} width="200rem" />
                   <p>
                     We decided to remove the module descriptions to allow more
-                    modules to be seen at once and reduce the cognitive load on
+                    modules to be seen at once and <b>reduce the cognitive load</b> on
                     the Module Search column.
                   </p>
                   <img src={modTwo} width="200rem" />
@@ -181,7 +185,10 @@ class KeyChanges extends React.Component {
                     platform features
                   </h3>
                   <p>
-                    Due to feedback of the novel nature of providing curated templates for NUS students to start their degree planning from, we included a tooltip to help users understand what is meant by “Choose a Template”.
+                    Due to feedback of the novel nature of providing curated
+                    templates for NUS students to start their degree planning
+                    from, we included a <b>tooltip</b> to help users understand what is
+                    meant by “Choose a Template”.
                   </p>
                   <img src={essOne} width="400rem" />
                 </TabPanel>
