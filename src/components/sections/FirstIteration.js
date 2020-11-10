@@ -1,5 +1,6 @@
 import React from 'react';
 import ExternalLink from '@common/ExternalLink';
+import { Link } from 'gatsby';
 
 import { Section, Container } from '@components/global';
 
@@ -25,17 +26,15 @@ class FirstIteration extends React.Component {
             </p>
             <p>
               This version of the prototype was prepared for the pilot user
-              evaluation test (the Peer Evaluation) which was done with members
+              evaluation test (peer evaluation) which was done with members
               of another project from our course. The evaluation observed how
               they navigated and interacted with the prototype, as well as the
               process by which they attempted to complete the tasks we prepared
-              for them (see Design Evaluation for more details). This test also
-              included an A/B test of two versions of the prototype in order to
+              for them. This test also included an A/B test of two versions of the prototype in order to
               sample their preferred templates/module layout.
             </p>
             <p>
-              After compiling the users’ responses (see Design Evaluation for
-              more details and results), we proceeded to make changes and came
+              After compiling the users’ responses, we proceeded to make changes and came
               up with the second iteration of the prototype.
             </p>
           </div>

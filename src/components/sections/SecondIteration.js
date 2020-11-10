@@ -26,9 +26,8 @@ class SecondIteration extends React.Component {
             <p>
               The second prototype featured changes we made to the interface
               based on the feedback gathered from the peer evaluation. We
-              prepared it for evaluation by real/potential users (User
-              Evaluation), which was done with another set of 4 NUS students
-              (see Design Evaluation for more details and results). After the
+              prepared it for evaluation by real/potential users (user
+              evaluation), which was done with another set of 4 NUS students. After the
               mixed reactions and preferences reported in the peer evaluation,
               we decided to give users the option to choose between the A and B
               version of layouts for the website, making it an interactive
@@ -38,8 +37,7 @@ class SecondIteration extends React.Component {
             <p>
               The results from the second round of user evaluation were once
               more systematically considered before we proceeded to make changes
-              based on them (see Design Evaluation for more details on the
-              process). This brought us to the Final Iteration of the degree.ly
+              based on them. This brought us to the Final Iteration of the degree.ly
               prototype.
             </p>
           </div>

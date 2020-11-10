@@ -37,8 +37,7 @@ class FinalIteration extends React.Component {
               Throughout these iteration processes, bringing in users’ opinions and
               having them take part in the design conversation earlier before
               the final design has been extremely valuable and informative for
-              our team. This is especially because they helped us identify problems we overlooked. Having gone through three iterations of our
-              prototype, we hope that we have designed a user interface that
+              our team. This is especially because they helped us identify problems we overlooked. Having gone through three iterations of our prototype, we hope that we have designed a user interface that
               better reflects the end-users’ needs and expectations towards our
               platform.
             </p>
