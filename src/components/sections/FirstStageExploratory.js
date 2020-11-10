@@ -6,14 +6,14 @@ import { ReactComponent as ProblemThree } from '@images/art/problem3.svg';
 
 import { Section, Container } from '@components/global';
 
-class Problem extends React.Component {
+class FirstStageExploratory extends React.Component {
   render() {
     return (
-      <Section id="problem">
+      <Section id="first-stage-exploratory">
         <Container>
           <Grid>
             <div>
-              <h2>Problem</h2>
+              <h2>Exploratory</h2>
               <p>
                 The project came about in recognition of the lack of a single,
                 well-designed platform for existing students to consolidate
@@ -106,4 +106,4 @@ const Art = styled.figure`
   width: 100%;
 `;
 
-export default Problem;
+export default FirstStageExploratory;
