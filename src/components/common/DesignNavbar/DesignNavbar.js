@@ -22,9 +22,9 @@ const NAV_ITEMS = [
 ];
 
 function reformatLink(item) {
-    let item_link = item.toLowerCase().replace(/\s/g, '-');
-    item_link = item_link.replace(':', '');
-    return item_link;
+  let item_link = item.toLowerCase().replace(/\s/g, '-');
+  item_link = item_link.replace(':', '');
+  return item_link;
 }
 
 class DesignNavbar extends Component {
@@ -52,8 +52,9 @@ class DesignNavbar extends Component {
     <NavListWrapper mobile={mobile}>
       <Scrollspy
         items={NAV_ITEMS.map(item => reformatLink(item))}
-        currentClassName="active"
         mobile={mobile}
+        currentClassName={'active'}
+        offset={-128}
       >
         {NAV_ITEMS.map(navItem => (
           <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>

@@ -7,7 +7,7 @@ class Personas extends React.Component {
     return (
       <Section id="personas">
         <Container>
-          <div>
+          <div style={{ marginTop: '3rem' }}>
             <h2>Personas</h2>
             <p>
               Following the findings from both the remote
@@ -19,13 +19,13 @@ class Personas extends React.Component {
               <h3>Yilin</h3>
               <p>
                 Yilin is a motivated student with a love for Street Dance. She
-                plans her modules way in advance to make leeway for any unforeseen
-                circumstances that may pop up. One such circumstance was when she
-                was almost unable to graduate as she miscounted her credits and
-                did not meet the requirements! She believes module planning
-                doesn’t have to be so hard. Even though she is already graduating,
-                she looks forward to new solutions that may help her juniors in
-                the future.
+                plans her modules way in advance to make leeway for any
+                unforeseen circumstances that may pop up. One such circumstance
+                was when she was almost unable to graduate as she miscounted her
+                credits and did not meet the requirements! She believes module
+                planning doesn’t have to be so hard. Even though she is already
+                graduating, she looks forward to new solutions that may help her
+                juniors in the future.
               </p>
               <h4>Background</h4>
               <ul>

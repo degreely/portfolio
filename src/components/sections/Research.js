@@ -8,7 +8,7 @@ class Research extends React.Component {
     return (
       <Section id="research">
         <Container>
-          <div>
+          <div style={{ marginTop: '3rem' }}>
             <h2>Research</h2>
             <p>Research stuff here.</p>
             <p>
