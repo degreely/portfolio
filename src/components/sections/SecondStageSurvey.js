@@ -10,7 +10,7 @@ class SecondStageSurvey extends React.Component {
     return (
       <Section id="second-stage-survey">
         <Container>
-          <div>
+          <div style={{ marginTop: '3rem' }}>
             <h2>Second Stage: Survey</h2>
             <p>
               With the crucial insights obtained through our exploratory phase,
@@ -29,7 +29,8 @@ class SecondStageSurvey extends React.Component {
               address first.
             </p>
             <p>
-              The results from the survey are included below. Click on any image to start viewing the gallery
+              The results from the survey are included below. Click on any image
+              to start viewing the gallery
             </p>
             <SimpleReactLightbox>
               <Survey />
