@@ -9,7 +9,7 @@ class ResultOfEvaluation extends React.Component {
     return (
       <Section id="result-and-process-of-user-insight-consideration">
         <Container>
-          <div>
+          <div style={{ marginTop: '3rem' }}>
             <h2>
               Results of Evaluation and Process of User Insight Consideration
             </h2>
