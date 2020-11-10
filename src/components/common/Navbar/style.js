@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { Container } from '@components/global';
 
 export const Nav = styled.nav`
+  display: flex;
+  align-items: center;
   padding: 16px 0;
   background-color: ${props => props.theme.color.primary};
   position: fixed;
@@ -48,6 +50,24 @@ export const NavItem = styled.li`
   a {
     text-decoration: none;
     color: ${props => props.theme.color.white.dark};
+    display: inline-block;
+    position: relative;
+  }
+
+  a.active {
+    &:after {
+      content: '•';
+      display: inline-block;
+
+      /* position the dot underneath the character */
+      position: absolute;
+      bottom: -1em;
+      left: 0;
+
+      /* center the dot horizontally */
+      text-align: center;
+      width: 100%;
+    }
   }
 `;
 

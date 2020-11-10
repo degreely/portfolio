@@ -14,11 +14,16 @@ import {
 
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
-const NAV_ITEMS = ['Problem', 'User Research', 'Design Evaluation', 'Prototyping Process'];
+const NAV_ITEMS = [
+  'Problem',
+  'User Research',
+  'Design Evaluation',
+  'Prototyping Process',
+];
 
-const activeStyle = {
-  textDecoration: 'underline',
-}
+const isActive = ({ isCurrent }) => {
+  return isCurrent ? { className: 'active' } : {};
+};
 
 class Navbar extends Component {
   state = {
@@ -38,7 +43,11 @@ class Navbar extends Component {
   getNavAnchorLink = item => {
     const item_link = item.toLowerCase().replace(/\s/g, '-');
     return (
-      <Link to={`/${item_link}`} onClick={this.closeMobileMenu} activeStyle={activeStyle}>
+      <Link
+        to={`/${item_link}`}
+        onClick={this.closeMobileMenu}
+        getProps={isActive}
+      >
         {item}
       </Link>
     );
@@ -51,18 +60,6 @@ class Navbar extends Component {
           <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
         ))}
       </ul>
-      {/*
-      <Scrollspy
-        items={NAV_ITEMS.map(item => item.toLowerCase())}
-        currentClassName="active"
-        mobile={mobile}
-        offset={-64}
-      >
-        {NAV_ITEMS.map(navItem => (
-          <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
-        ))}
-      </Scrollspy>
-      */}
     </NavListWrapper>
   );
 
