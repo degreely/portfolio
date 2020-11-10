@@ -28,7 +28,7 @@ class MethodOfEvaluation extends React.Component {
     return (
       <Section id="method-of-evaluation">
         <Container>
-          <div>
+          <div style={{ marginTop: '3rem' }}>
             <h2>Method of Evaluation</h2>
             <div id="intro">
               <p>
@@ -169,7 +169,7 @@ class MethodOfEvaluation extends React.Component {
                     version of the prototype they preferred.
                   </p>
                   <Text type="headline-5">Modules on Dashboard</Text>
-                    <img src={toggleGif} width="500rem" />
+                  <img src={toggleGif} width="500rem" />
                   <Text type="headline-5">Template Layout</Text>
                   <Table>
                     <TableHeader>

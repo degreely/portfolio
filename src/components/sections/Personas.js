@@ -15,7 +15,7 @@ class Personas extends React.Component {
     return (
       <Section id="personas">
         <Container>
-          <div>
+          <div style={{ marginTop: '3rem' }}>
             <h2>Personas</h2>
             <p>
               Following the findings from both the remote
