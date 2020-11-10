@@ -23,14 +23,15 @@ const NAV_ITEMS = [
 ];
 
 function reformatLink(item) {
-    let item_link = item.toLowerCase().replace(/\s/g, '-');
-    item_link = item_link.replace(':', '');
-    return item_link;
+  let item_link = item.toLowerCase().replace(/\s/g, '-');
+  item_link = item_link.replace(':', '');
+  return item_link;
 }
 
 class UserResearchNavbar extends Component {
   state = {
     mobileMenuOpen: false,
+    active: NAV_ITEMS[0],
   };
 
   toggleMobileMenu = () => {
@@ -53,11 +54,16 @@ class UserResearchNavbar extends Component {
     <NavListWrapper mobile={mobile}>
       <Scrollspy
         items={NAV_ITEMS.map(item => reformatLink(item))}
-        currentClassName="active"
         mobile={mobile}
       >
         {NAV_ITEMS.map(navItem => (
-          <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
+          <NavItem
+            key={navItem}
+            onClick={() => this.setState({ active: navItem })}
+            className={this.state.active === navItem ? 'active' : ''}
+          >
+            {this.getNavAnchorLink(navItem)}
+          </NavItem>
         ))}
       </Scrollspy>
     </NavListWrapper>
