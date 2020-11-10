@@ -31,7 +31,7 @@ class KeyChanges extends React.Component {
     return (
       <Section id="key-changes">
         <Container>
-          <div>
+          <div style={{ marginTop: '3rem' }}>
             <h2>Key Changes</h2>
             <p>
               These were some of the major design changes we made for our design

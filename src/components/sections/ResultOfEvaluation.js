@@ -14,8 +14,17 @@ class ResultOfEvaluation extends React.Component {
               Results of Evaluation and Process of User Insight Consideration
             </h2>
             <p>
-              <i>Note: Full observations and responses recorded by facilitators in
-              templates are available <ExternalLink className="link" href="https://tinyurl.com/yy5d4ucn">here</ExternalLink>.</i>
+              <i>
+                Note: Full observations and responses recorded by facilitators
+                in templates are available{' '}
+                <ExternalLink
+                  className="link"
+                  href="https://tinyurl.com/yy5d4ucn"
+                >
+                  here
+                </ExternalLink>
+                .
+              </i>
             </p>
             <p>
               At the end of the evaluation, the results were parsed and compiled

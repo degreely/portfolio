@@ -30,7 +30,6 @@ function reformatLink(item) {
 class DesignNavbar extends Component {
   state = {
     mobileMenuOpen: false,
-    active: NAV_ITEMS[0],
   };
 
   toggleMobileMenu = () => {
@@ -54,15 +53,11 @@ class DesignNavbar extends Component {
       <Scrollspy
         items={NAV_ITEMS.map(item => reformatLink(item))}
         mobile={mobile}
+        currentClassName={'active'}
+        offset={-128}
       >
         {NAV_ITEMS.map(navItem => (
-          <NavItem
-            key={navItem}
-            onClick={() => this.setState({ active: navItem })}
-            className={this.state.active === navItem ? 'active' : ''}
-          >
-            {this.getNavAnchorLink(navItem)}
-          </NavItem>
+          <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
         ))}
       </Scrollspy>
     </NavListWrapper>
