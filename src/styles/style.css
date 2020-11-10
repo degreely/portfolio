@@ -1,0 +1,13 @@
+h2 {
+    font-weight: 700;
+}
+
+.link {
+    color: #5E60CE;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.link:hover {
+    opacity: 1;
+}

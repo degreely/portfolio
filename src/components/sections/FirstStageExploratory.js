@@ -3,8 +3,10 @@ import styled from 'styled-components';
 import { ReactComponent as ProblemOne } from '@images/art/problem1.svg';
 import { ReactComponent as ProblemTwo } from '@images/art/problem2.svg';
 import { ReactComponent as ProblemThree } from '@images/art/problem3.svg';
-
+import ExternalLink from '@common/ExternalLink';
 import { Section, Container } from '@components/global';
+
+import '../../styles/style.css';
 
 class FirstStageExploratory extends React.Component {
   render() {
@@ -13,14 +15,13 @@ class FirstStageExploratory extends React.Component {
         <Container>
           <Grid>
             <div>
-              <h2>Exploratory</h2>
+              <h2>First Stage: Exploratory</h2>
               <p>
-                The project came about in recognition of the lack of a single,
-                well-designed platform for existing students to consolidate
-                their degree progress. We noticed that current students employ a
-                myriad of self-made and sourced solutions to arrange their study
-                plans, all while hoping they do not make the mistake of missing
-                graduation requirements.
+                Our user study was completed in two stages. Firstly, our user study began with the exploratory phase. We conducted remote observations and interviews to gain a sense of the various methods and pain points our target group may face while planning the progression of their degrees.
+              </p>
+              <br />
+              <p>
+                To obtain information about current planning strategies employed, planning mediums used and pain points our target group may have as a result of resources made available by their faculties and duration in NUS’s system, students from various faculties and different levels of study were selected for this phase.
               </p>
             </div>
             <Art>{ProblemOne()}</Art>
@@ -28,27 +29,23 @@ class FirstStageExploratory extends React.Component {
           <Grid inverse>
             <Art>{ProblemTwo()}</Art>
             <div>
-              <h2>Alternatives in Place</h2>
               <p>
-                From the use of spreadsheets to NUSMods, the slow and arduous
-                process is made worse by resources and materials being strewn
-                across the school’s various platforms, requiring multi-tasking
-                skills and a high cognitive load to consolidate and analyze.
-                <br />
-                <br />
-                One of the most useful sites NUS has to offer for planning
-                modules, EduRec’s what-if report generator, is slow and
-                frustrating to navigate. Furthermore, it is not widely known and
-                only available for limited periods in an academic year.
+                The remote observation was task-specific and required users to let us observe how they usually plan their semesters while they think aloud to rationalize their actions. This gave us crucial insights into what mediums were used for the planning process and what materials were consulted before making decisions.
+              </p>
+              <br />
+              <p>
+                Through these remote observations, we also noted several causes to our users’ frustrations and what they liked about the specific tools used in their planning process.
               </p>
             </div>
           </Grid>
           <Grid>
             <div>
-              <h2>Our Goal</h2>
               <p>
-                With degree.ly, we hope to make module planning and progress
-                tracking a less nightmarish and more efficient process.
+                At the end of the session, we asked post-observation questions so users could reflect on their experience with module planning and what they wish to see in a better platform for planning.
+              </p>
+              <br />
+              <p>
+                You can access the various questions and tasks we have asked users <ExternalLink className="link" href="https://tinyurl.com/t8-user-study-template/">here</ExternalLink>. 
               </p>
             </div>
             <Art>{ProblemThree()}</Art>
@@ -75,11 +72,6 @@ const Grid = styled.div`
     text-align: left;
     grid-template-columns: 2fr 3fr;
   `}
-
-  h2 {
-    margin-bottom: 16px;
-    font-weight: 700;
-  }
 
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
