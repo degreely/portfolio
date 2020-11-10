@@ -48,6 +48,7 @@ class IdeationPrototyping extends React.Component {
                   src={userFlow}
                   alt="Issues with module planning"
                   width="500rem"
+                  className="clickable"
                 />
               </SRLWrapper>
             </SimpleReactLightbox>
@@ -63,15 +64,32 @@ class IdeationPrototyping extends React.Component {
                   src={chooseTemplate}
                   alt="Template Selection"
                   width="200rem"
+                  className="clickable"
                 />
-                <img src={dashboard} alt="Dashboard 1" width="200rem" />
+                <img
+                  src={dashboard}
+                  alt="Dashboard 1"
+                  width="200rem"
+                  className="clickable"
+                />
                 <img
                   src={degreeSettings}
                   alt="Editing Focus Area/Specialization"
                   width="200rem"
+                  className="clickable"
                 />
-                <img src={editModeTwo} alt="Dashboard 2" width="200rem" />
-                <img src={editMode} alt="Dashboard 3" width="200rem" />
+                <img
+                  src={editModeTwo}
+                  alt="Dashboard 2"
+                  width="200rem"
+                  className="clickable"
+                />
+                <img
+                  src={editMode}
+                  alt="Dashboard 3"
+                  width="200rem"
+                  className="clickable"
+                />
               </SRLWrapper>
             </SimpleReactLightbox>
             <p>

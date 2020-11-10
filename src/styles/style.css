@@ -1,9 +1,13 @@
 .link {
-    color: #5E60CE;
-    opacity: 0.7;
-    text-decoration: none;
+  color: #5e60ce;
+  opacity: 0.7;
+  text-decoration: none;
 }
 
 .link:hover {
-    opacity: 1;
+  opacity: 1;
+}
+
+.clickable:hover {
+  cursor: pointer;
 }

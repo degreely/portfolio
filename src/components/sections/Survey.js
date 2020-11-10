@@ -28,12 +28,42 @@ function Survey() {
   return (
     <div className="survey">
       <SRLWrapper options={options}>
-        <img src={picOne} alt="Year of study" height="100rem" />
-        <img src={picTwo} alt="Degree planning considerations" width="200rem" />
-        <img src={picThree} alt="Use of template" width="200rem" />
-        <img src={picFour} alt="Awareness of EduRec's What-If Report" width="200rem" />
-        <img src={picFive} alt="Mediums used" width="200rem" />
-        <img src={picSix} alt="Issues with module planning" width="200rem" />
+        <img
+          src={picOne}
+          alt="Year of study"
+          height="100rem"
+          className="clickable"
+        />
+        <img
+          src={picTwo}
+          alt="Degree planning considerations"
+          width="200rem"
+          className="clickable"
+        />
+        <img
+          src={picThree}
+          alt="Use of template"
+          width="200rem"
+          className="clickable"
+        />
+        <img
+          src={picFour}
+          alt="Awareness of EduRec's What-If Report"
+          width="200rem"
+          className="clickable"
+        />
+        <img
+          src={picFive}
+          alt="Mediums used"
+          width="200rem"
+          className="clickable"
+        />
+        <img
+          src={picSix}
+          alt="Issues with module planning"
+          width="200rem"
+          className="clickable"
+        />
       </SRLWrapper>
     </div>
   );
