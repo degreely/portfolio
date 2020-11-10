@@ -71,7 +71,7 @@ class MethodOfEvaluation extends React.Component {
               </p>
             </div>
             <h3>Test Tasks</h3>
-            <TabsManager tabs={tabs} tabsId="basic-usage-tabs">
+            <TabsManager tabs={tabs} tabsId="test-task-tabs">
               <Tabs />
               <TabPanels>
                 <TabPanel id="usability-testing">
