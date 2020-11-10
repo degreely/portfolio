@@ -25,6 +25,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h2 {
+    font-weight: 700;
     ${props => props.theme.font_size.larger};
   }
 

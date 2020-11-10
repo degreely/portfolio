@@ -9,28 +9,34 @@ class Scenarios extends React.Component {
         <Container>
           <div>
             <h2>Scenarios</h2>
-            <p>Research stuff here.</p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              iaculis sodales eros, vitae euismod enim pharetra eu. Donec
-              blandit elementum ultricies. Proin iaculis erat ac mollis
-              tristique. Aliquam eu lobortis massa, nec efficitur lacus.
-              Pellentesque tincidunt ipsum quis mollis venenatis. Aenean tempor
-              urna quis aliquam porttitor. Nullam consectetur pretium lacus et
-              ornare.
+              The following are some task-oriented decompositions of how our target users may currently plan their semesters as well as how degree.ly may seek to smoothen the task process for our target users. They allow for further discussion on the contexts, needs, settings, actors, and actions that need to be accounted for in our future solution.
             </p>
-            <p>
-              Phasellus vel purus ornare, volutpat eros ut, sollicitudin nisi.
-              Maecenas aliquet purus ac mollis gravida. Donec rutrum malesuada
-              quam, non sollicitudin magna placerat eu. Aenean a turpis gravida
-              leo facilisis ullamcorper. Aenean malesuada id libero et pharetra.
-              Maecenas dictum consequat eros, faucibus pulvinar leo pulvinar
-              non. Donec suscipit tristique turpis nec posuere. Aliquam odio
-              quam, scelerisque id viverra quis, sagittis quis augue. In hac
-              habitasse platea dictumst. Nulla non bibendum leo. Nullam pharetra
-              mauris libero, luctus imperdiet enim posuere sed. Phasellus augue
-              libero, fermentum id ultricies at, pretium eu ante.
-            </p>
+            <ol>
+              <li>
+                <b>Based on someone who doesn’t use degree.ly.</b>< br/>< br/>
+
+                Yilin stumbles upon an internship opening at Unilever, a prestigious firm for Life Science undergraduates. Excellent performance during the internship would mean conversion to a full-time role.< br/>< br/>
+
+                She gets down to work and starts planning how she can meet her graduation requirements while leaving a whole semester for the internship and still graduating on time. Using her degree plan on Microsoft Word, she scrolls back and forth to check if she has met her degree requirements while switching windows to view the requirements on her browser.< br/>< br/>
+
+                While pondering whether to take a module for the next semester, she makes a quick Google search on the module to get some reviews. Aside from the comments section on NUSMods for module reviews, she is also able to find numerous others on blogs written by seniors.< br/>< br/>
+
+                At the end of it all, she is swamped with information and nowhere closer to knowing if she can take on that Unilever internship after all. With a sigh, she starts applying for it anyway. Things will sort themselves out eventually, she thinks to herself.< br/>< br/>
+              </li>
+              < br/>
+              <li>
+                <b>Based on someone who uses degree.ly.</b>< br/>< br/>
+
+                Amit decides on Software Engineering as his focus area and starts planning the modules he needs to take.< br/>< br/>
+
+                He uses degree.ly to choose a Software Engineering focus area template. It is a pretty common focus area, so it’s no surprise that alongside the faculty-provided one there are also templates prepared by seniors. With this, he doesn’t have to visit another site to view the requirements and pick them out one by one.< br/>< br/>
+
+                By keying in an expected grade for each module, Amit is also able to estimate the best combination of modules he needs to take to secure his ideal CAP.< br/>< br/>
+
+                Module planning isn’t that bad after all. He leans back in his chair and takes a sip of his coffee, moving on to his next task.< br/>< br/>
+              </li>
+            </ol>
           </div>
         </Container>
       </Section>
