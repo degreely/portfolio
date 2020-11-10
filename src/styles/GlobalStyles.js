@@ -32,11 +32,19 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h3 {
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-family: ${props => props.theme.font.primary};
     ${props => props.theme.font_size.large};
+  }
+
+  h4 {
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: ${props => props.theme.font.primary};
+    ${props => props.theme.font_size.regular};
   }
 
   p, section li {
