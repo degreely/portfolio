@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ReactComponent as ProblemOne } from '@images/art/problem1.svg';
-import { ReactComponent as ProblemTwo } from '@images/art/problem2.svg';
-import { ReactComponent as ProblemThree } from '@images/art/problem3.svg';
+import { ReactComponent as explore } from '@images/art/explore.svg';
+import { ReactComponent as frustrated } from '@images/art/frustrated.svg';
+import { ReactComponent as hifive } from '@images/art/hifive.svg';
 import ExternalLink from '@common/ExternalLink';
 import { Section, Container } from '@components/global';
 
@@ -32,10 +32,10 @@ class FirstStageExploratory extends React.Component {
                 phase.
               </p>
             </div>
-            <Art>{ProblemOne()}</Art>
+            <Art>{explore()}</Art>
           </Grid>
           <Grid inverse>
-            <Art>{ProblemTwo()}</Art>
+            <Art>{frustrated()}</Art>
             <div>
               <p>
                 The remote observation was task-specific and required users to
@@ -70,7 +70,7 @@ class FirstStageExploratory extends React.Component {
                 .
               </p>
             </div>
-            <Art>{ProblemThree()}</Art>
+            <Art>{hifive()}</Art>
           </Grid>
         </Container>
       </Section>

@@ -21,7 +21,7 @@ class Footer extends React.Component {
           <Copyright>
             <h2 style={{ fontWeight: 'bolder' }}>degree.ly</h2>
             <span>
-              Illustrations by <ExternalLink href="https://freepik.com">pch.vector</ExternalLink>
+              Illustrations by <ExternalLink href="https://freepik.com">pch.vector and freepik</ExternalLink>
             </span>
           </Copyright>
           <SocialIcons>
