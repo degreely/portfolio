@@ -34,10 +34,10 @@ const GlobalStyles = createGlobalStyle`
     ${props => props.theme.font_size.large};
   }
 
-  p {
-    ${props => props.theme.font_size.regular};
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  p, section li {
+    ${props => props.theme.font_size.small};
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     color: ${props => props.theme.color.black.light};
   }
 

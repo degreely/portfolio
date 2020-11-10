@@ -1,3 +1,5 @@
+import '../index.scss';
+
 import React from 'react';
 
 import Layout from '@common/Layout';

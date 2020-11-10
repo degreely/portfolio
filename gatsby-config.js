@@ -4,6 +4,7 @@ module.exports = {
   pathPrefix: '/portfolio',
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-svgr`,
       options: {

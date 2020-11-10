@@ -21,7 +21,6 @@ class SecondStageSurvey extends React.Component {
               consensus on the various considerations taken when planning and
               the various pain points experienced during this process.
             </p>
-            <br />
             <p>
               To potentially expand on what we already knew, we also allowed
               users to add on their own experiences and planning goals if they
@@ -29,9 +28,9 @@ class SecondStageSurvey extends React.Component {
               picture of what our target group wants and which pain points to
               address first.
             </p>
-            <br />
-            <p>The results from the survey are included below. Click on any image to start viewing the gallery.</p>
-            <br />
+            <p>
+              The results from the survey are included below. Click on any image to start viewing the gallery
+            </p>
             <SimpleReactLightbox>
               <Survey />
             </SimpleReactLightbox>

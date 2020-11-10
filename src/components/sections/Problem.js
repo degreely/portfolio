@@ -13,7 +13,7 @@ class Problem extends React.Component {
         <Container>
           <Grid>
             <div>
-              <h2>Problem</h2>
+              <h2>Introduction</h2>
               <p>
                 The project came about in recognition of the lack of a single,
                 well-designed platform for existing students to consolidate
@@ -34,8 +34,8 @@ class Problem extends React.Component {
                 process is made worse by resources and materials being strewn
                 across the school’s various platforms, requiring multi-tasking
                 skills and a high cognitive load to consolidate and analyze.
-                <br />
-                <br />
+              </p>
+              <p>
                 One of the most useful sites NUS has to offer for planning
                 modules, EduRec’s what-if report generator, is slow and
                 frustrating to navigate. Furthermore, it is not widely known and

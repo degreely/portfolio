@@ -14,7 +14,6 @@ class UserIdentificationAndRecruitment extends React.Component {
             <p>
               Our target users are NUS students who are expected to plan their modules and track their degree progress to ensure graduation, i.e. students without fixed degree curriculums. We conducted the study through convenience sampling by approaching our friends and classmates across various faculties and levels.
             </p>
-            <br />
             <p>
               In light of the ongoing pandemic, the entire study was conducted remotely over Zoom and Google Forms. A total of 9 students participated in the remote observation and interview, while 52 others completed our survey.
             </p>

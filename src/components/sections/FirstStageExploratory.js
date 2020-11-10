@@ -19,7 +19,6 @@ class FirstStageExploratory extends React.Component {
               <p>
                 Our user study was completed in two stages. Firstly, our user study began with the exploratory phase. We conducted remote observations and interviews to gain a sense of the various methods and pain points our target group may face while planning the progression of their degrees.
               </p>
-              <br />
               <p>
                 To obtain information about current planning strategies employed, planning mediums used and pain points our target group may have as a result of resources made available by their faculties and duration in NUS’s system, students from various faculties and different levels of study were selected for this phase.
               </p>
@@ -32,7 +31,6 @@ class FirstStageExploratory extends React.Component {
               <p>
                 The remote observation was task-specific and required users to let us observe how they usually plan their semesters while they think aloud to rationalize their actions. This gave us crucial insights into what mediums were used for the planning process and what materials were consulted before making decisions.
               </p>
-              <br />
               <p>
                 Through these remote observations, we also noted several causes to our users’ frustrations and what they liked about the specific tools used in their planning process.
               </p>
@@ -43,7 +41,6 @@ class FirstStageExploratory extends React.Component {
               <p>
                 At the end of the session, we asked post-observation questions so users could reflect on their experience with module planning and what they wish to see in a better platform for planning.
               </p>
-              <br />
               <p>
                 You can access the various questions and tasks we have asked users <ExternalLink className="link" href="https://tinyurl.com/t8-user-study-template/">here</ExternalLink>. 
               </p>

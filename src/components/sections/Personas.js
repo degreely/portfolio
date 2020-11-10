@@ -15,17 +15,18 @@ class Personas extends React.Component {
               personas to summarise the different user characteristics,
               backgrounds, motivations, and frustrations we have observed.
             </p>
-            <br />
             <div>
               <h3>Yilin</h3>
-              Yilin is a motivated student with a love for Street Dance. She
-              plans her modules way in advance to make leeway for any unforeseen
-              circumstances that may pop up. One such circumstance was when she
-              was almost unable to graduate as she miscounted her credits and
-              did not meet the requirements! She believes module planning
-              doesn’t have to be so hard. Even though she is already graduating,
-              she looks forward to new solutions that may help her juniors in
-              the future.
+              <p>
+                Yilin is a motivated student with a love for Street Dance. She
+                plans her modules way in advance to make leeway for any unforeseen
+                circumstances that may pop up. One such circumstance was when she
+                was almost unable to graduate as she miscounted her credits and
+                did not meet the requirements! She believes module planning
+                doesn’t have to be so hard. Even though she is already graduating,
+                she looks forward to new solutions that may help her juniors in
+                the future.
+              </p>
               <h4>Background</h4>
               <ul>
                 <li>Y4 student from the Faculty of Science</li>
