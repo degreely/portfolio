@@ -13,7 +13,7 @@ class Team extends React.Component {
     return (
       <Section id="team" accent="secondary">
         <Container style={{ position: 'relative' }}>
-          <h2 style={{ fontWeight: 'bolder' }}>The Team</h2>
+          <h2 style={{ fontWeight: 'bolder' }}>The Team (G08)</h2>
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <TeamGrid>
               <div>
@@ -32,7 +32,7 @@ class Team extends React.Component {
                 <img src={geraldinePic} height="200rem" />
                 <Title>Geraldine Foe</Title>
                 <Subtitle>Year 4</Subtitle>
-                <Subtitle>Communications & New Media</Subtitle>
+                <Subtitle>Sociology</Subtitle>
               </div>
               <div>
                 <img src={aihuiPic} height="200rem" />
@@ -77,7 +77,9 @@ const Title = styled.p`
 `;
 
 const Subtitle = styled.p`
-  font-size: ${props => props.theme.font_size.smaller};
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
   color: ${props => props.theme.color.black.light};
 `;
 

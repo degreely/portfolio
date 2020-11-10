@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 
 const SEO_DATA = {
   description: 'Supercharge your degree plannnig with us today',
-  title: 'degree.ly',
+  title: 'degree.ly Portfolio',
   url: '',
   keywords: ['degree.ly', 'nus', 'CS3240', 'degree planner'],
   img: '',

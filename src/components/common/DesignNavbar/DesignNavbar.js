@@ -10,7 +10,7 @@ import {
   NavListWrapper,
   MobileMenu,
   Mobile,
-} from './style';
+} from '../../../styles/NavStyle.js';
 
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 

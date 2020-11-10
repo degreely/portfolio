@@ -47,7 +47,7 @@ export const NavItem = styled.li`
   margin: 0 0.75em;
   font-family: ${props => props.theme.font.primary};
   font-size: ${props => props.theme.font_size.small};
-  font-weight: 500;
+  font-weight: 600;
 
   a {
     text-decoration: none;
