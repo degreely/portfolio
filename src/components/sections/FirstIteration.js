@@ -9,7 +9,7 @@ import '../../styles/style.css';
 class FirstIteration extends React.Component {
   render() {
     return (
-      <Section id="first-iteration">
+      <Section id="first-iteration" accent="secondary">
         <Container>
           <div style={{ marginTop: '3rem' }}>
             <h2>First Iteration</h2>
@@ -22,20 +22,28 @@ class FirstIteration extends React.Component {
               allowfullscreen
             ></iframe>
             <p>
-              You may view our interactive prototype <ExternalLink className="link" href="https://www.figma.com/proto/8143UnTnVi33YE61RGqdxk/degree.ly-v1?node-id=139%3A0&viewport=-749%2C-129%2C0.15888762474060059&scaling=contain">here</ExternalLink>.
+              You may view our interactive prototype{' '}
+              <ExternalLink
+                className="link"
+                href="https://www.figma.com/proto/8143UnTnVi33YE61RGqdxk/degree.ly-v1?node-id=139%3A0&viewport=-749%2C-129%2C0.15888762474060059&scaling=contain"
+              >
+                here
+              </ExternalLink>
+              .
             </p>
             <p>
               This version of the prototype was prepared for the pilot user
-              evaluation test (peer evaluation) which was done with members
-              of another project from our course. The evaluation observed how
-              they navigated and interacted with the prototype, as well as the
+              evaluation test (peer evaluation) which was done with members of
+              another project from our course. The evaluation observed how they
+              navigated and interacted with the prototype, as well as the
               process by which they attempted to complete the tasks we prepared
-              for them. This test also included an A/B test of two versions of the prototype in order to
-              sample their preferred templates/module layout.
+              for them. This test also included an A/B test of two versions of
+              the prototype in order to sample their preferred templates/module
+              layout.
             </p>
             <p>
-              After compiling the users’ responses, we proceeded to make changes and came
-              up with the second iteration of the prototype.
+              After compiling the users’ responses, we proceeded to make changes
+              and came up with the second iteration of the prototype.
             </p>
           </div>
         </Container>

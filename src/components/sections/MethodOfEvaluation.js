@@ -26,7 +26,7 @@ const tabs = ['Part 1: Usability Testing', 'Part 2: A/B Testing'];
 class MethodOfEvaluation extends React.Component {
   render() {
     return (
-      <Section id="method-of-evaluation">
+      <Section id="method-of-evaluation" accent="secondary">
         <Container>
           <div style={{ marginTop: '3rem' }}>
             <h2>Method of Evaluation</h2>

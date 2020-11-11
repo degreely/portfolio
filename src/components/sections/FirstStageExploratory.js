@@ -11,7 +11,7 @@ import '../../styles/style.css';
 class FirstStageExploratory extends React.Component {
   render() {
     return (
-      <Section id="first-stage-exploratory">
+      <Section id="first-stage-exploratory" accent="secondary">
         <Container>
           <Grid>
             <div style={{ marginTop: '1rem' }}>
@@ -60,7 +60,8 @@ class FirstStageExploratory extends React.Component {
               </p>
               <p>
                 You can access the various questions and tasks we have asked
-                users <ExternalLink
+                users{' '}
+                <ExternalLink
                   className="link"
                   href="https://tinyurl.com/t8-user-study-template/"
                 >

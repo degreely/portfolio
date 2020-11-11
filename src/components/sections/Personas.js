@@ -13,7 +13,7 @@ const tabs = ['Yilin', 'Atiqah', 'Amit'];
 class Personas extends React.Component {
   render() {
     return (
-      <Section id="personas">
+      <Section id="personas" accent="secondary">
         <Container>
           <div style={{ marginTop: '3rem' }}>
             <h2>Personas</h2>
@@ -23,6 +23,7 @@ class Personas extends React.Component {
               personas to summarise the different user characteristics,
               backgrounds, motivations, and frustrations we have observed.
             </p>
+            <p>Click on the tabs below to browse through the profiles of Yilin, Atiqah and Amit.</p>
             <TabsManager tabs={tabs} tabsId="basic-usage-tabs">
               <Tabs />
               <TabPanels>
@@ -44,13 +45,13 @@ class Personas extends React.Component {
                     </p>
                   </Grid>
 
-                  < h4>Background</ h4>
+                  <h4>Background</h4>
                   <ul>
                     <li>Y4 student from the Faculty of Science</li>
                     <li>Majoring in Life Sciences</li>
                     <li>Loves to travel</li>
                   </ul>
-                  <  h4>Motivations</  h4>
+                  <h4>Motivations</h4>
                   <ul>
                     <li>Having modules to map for Summer School</li>
                     <li>
@@ -58,7 +59,7 @@ class Personas extends React.Component {
                       3.5 years instead of 4)
                     </li>
                   </ul>
-                  <  h4>Frustrations</  h4>
+                  <h4>Frustrations</h4>
                   <ul>
                     <li>
                       School doesn’t offer the same modules every semester
@@ -84,17 +85,17 @@ class Personas extends React.Component {
                     </p>
                   </Grid>
 
-                  <  h4>Background</  h4>
+                  <h4>Background</h4>
                   <ul>
                     <li>Y3 student from the Faculty of Engineering</li>
                     <li>Majoring in Biomedical Engineering</li>
                     <li>Owns 2 cats</li>
                   </ul>
-                  <  h4>Motivations</  h4>
+                  <h4>Motivations</h4>
                   <ul>
                     <li>Taking the same modules with her friend group</li>
                   </ul>
-                  <  h4>Frustrations</  h4>
+                  <h4>Frustrations</h4>
                   <ul>
                     <li>
                       Difficult to simulate different CAPs if she takes
@@ -117,19 +118,19 @@ class Personas extends React.Component {
                     </p>
                   </Grid>
 
-                  <  h4>Background</  h4>
+                  <h4>Background</h4>
                   <ul>
                     <li>Y2 student from the School of Computing</li>
                     <li>Majoring in Computer Science</li>
                     <li>Enjoys the solitude brought about by Covid-19</li>
                   </ul>
-                  <  h4>Motivations</  h4>
+                  <h4>Motivations</h4>
                   <ul>
                     <li>
                       Looking for modules taught by professors with good reviews
                     </li>
                   </ul>
-                  <  h4>Frustrations</  h4>
+                  <h4>Frustrations</h4>
                   <ul>
                     <li>
                       Modules for focus area are not integrated into NUSMods

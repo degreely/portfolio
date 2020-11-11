@@ -12,7 +12,7 @@ import metrics from '../../images/frontend/metrics.png';
 class Frontend extends React.Component {
   render() {
     return (
-      <Section id="frontend">
+      <Section id="frontend" accent="secondary">
         <Container>
           <h2>Design Principles</h2>
           <p>
@@ -43,12 +43,16 @@ class Frontend extends React.Component {
             <div>
               <h3>Universal Usability</h3>
               <p>
-                In the example above, we do not solely rely on colour to convey information. Although the unmet requirement in <i>IT Professionalism</i> is highlighted in red, it is accompanied by a badge as well which indicates the number of unmet modules in that basket.
+                In the example above, we do not solely rely on colour to convey
+                information. Although the unmet requirement in{' '}
+                <i>IT Professionalism</i> is highlighted in red, it is
+                accompanied by a badge as well which indicates the number of
+                unmet modules in that basket.
               </p>
               <p>
-                Moreover, all text and components on the page have appropriate contrast
-                with the background to create an accessible Web experience for
-                users.
+                Moreover, all text and components on the page have appropriate
+                contrast with the background to create an accessible Web
+                experience for users.
               </p>
             </div>
           </Grid>
@@ -56,8 +60,11 @@ class Frontend extends React.Component {
             <div>
               <h3>Prevent Errors</h3>
               <p>
-                To prevent users from accidentally deleting a whole semester, we have added a popup to
-                confirm that they would like to delete the module. Users are able to easily dismiss the popup if they have accidentally clicked on the delete button, or if they have changed their mind.
+                To prevent users from accidentally deleting a whole semester, we
+                have added a popup to confirm that they would like to delete the
+                module. Users are able to easily dismiss the popup if they have
+                accidentally clicked on the delete button, or if they have
+                changed their mind.
               </p>
             </div>
             <Art>
@@ -85,9 +92,14 @@ class Frontend extends React.Component {
                 The degree metrics on the right sidebar follows the user through
                 every screen as well, and updates according to the degree
                 settings they currently have and the modules allocated. For
-                example, changing their degree settings will alter the <i>Degree Requirements</i> section accordingly.
+                example, changing their degree settings will alter the{' '}
+                <i>Degree Requirements</i> section accordingly.
               </p>
-              <p>This way, users do not have to remember how their changes to their degree plan will affect their degree progress as it is updated realtime in the metrics sidebar.</p>
+              <p>
+                This way, users do not have to remember how their changes to
+                their degree plan will affect their degree progress as it is
+                updated realtime in the metrics sidebar.
+              </p>
             </div>
             <Art>
               <img src={metrics} width="500rem" />

@@ -11,7 +11,7 @@ import aihuiPic from '../../images/team/aihui.svg';
 class Team extends React.Component {
   render() {
     return (
-      <Section id="team" accent="secondary">
+      <Section id="team">
         <Container style={{ position: 'relative' }}>
           <h2 style={{ fontWeight: 'bolder' }}>The Team (G08)</h2>
           <div style={{ display: 'flex', alignItems: 'center' }}>

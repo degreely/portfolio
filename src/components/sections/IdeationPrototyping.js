@@ -42,6 +42,7 @@ class IdeationPrototyping extends React.Component {
               screens, and features of degree.ly that would be essential to the
               degree planning process for our users.
             </p>
+            <p>Click on the user flow chart below to expand it.</p>
             <SimpleReactLightbox>
               <SRLWrapper options={options}>
                 <img
@@ -58,6 +59,7 @@ class IdeationPrototyping extends React.Component {
               processes that the degree.ly platform would have. These were done
               on <b>Google Jamboard</b>.
             </p>
+            <p>Click on any of the Jamboard snippets below to start viewing the gallery.</p>
             <SimpleReactLightbox>
               <SRLWrapper options={options}>
                 <img
