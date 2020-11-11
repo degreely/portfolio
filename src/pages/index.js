@@ -9,13 +9,15 @@ import Header from '@sections/Header';
 import About from '@sections/About';
 import Team from '@sections/Team';
 import Footer from '@sections/Footer';
+import Frontend from '../components/sections/Frontend';
 
 const IndexPage = () => (
   <Layout>
     <Navbar />
     <Header />
     <About />
-    <Team />
+    <Frontend />
+/    <Team />
     <Footer />
   </Layout>
 );
